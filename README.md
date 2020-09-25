@@ -27,7 +27,7 @@ from shelter_preprocess import preprocess_df
 
 
 ```python
-# normally we would do preprocessing before train-test split
+# normally we would do preprocessing after train-test split
 # in this case the preprocessing is all just "hard-coded"
 df = preprocess_df(austin_df)
 ```
@@ -366,6 +366,12 @@ scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 ```
+
+### Modeling
+
+We'll just go ahead and use the exact same stack from the previous example
+
+(In reality you would want to do more EDA, make a more intentional decision)
 
 
 ```python
